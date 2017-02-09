@@ -175,18 +175,55 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+
+# ========================================================================#
+#         Default colors                                                  # 
+# ========================================================================#
+
+#222222
+
+# class                 border  backgr. text    indicator child_border
+#client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+#client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+#client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+#client.urgent           #2f343a #900000 #ffffff #900000   #900000
+#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+#client.background       #ffffff
+
+
+# ========================================================================#
+#         My colors based on tutorial                                     # 
+# ========================================================================#
+
+
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
+set $inactlig-text-color #B9C6E1
 set $inactive-text-color #676E7D
+set $client-inactive-bg  #2f343f
 set $urgent-bg-color     #E53935
 
-# window colors
-#                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color 	$inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color 	$inactive-bg-color $inactive-text-color #00ff00
-client.urgent 			$urgent-bg-color 	$urgent-bg-color   $text-color 			#00ff00
+#------------------------------------------------------------------------------------------------------------------------
+#                          border             	background          text                 	indicator		child_border
+#------------------------------------------------------------------------------------------------------------------------
+client.focused            $bg-color           	$bg-color           $text-color         	#00ff00			#FF30EC
+client.focused_inactive   $inactive-bg-color 	$inactive-bg-color  $inactlig-text-color 	#00ff00			#FF00EC
+client.unfocused          $client-inactive-bg 	$client-inactive-bg $inactive-text-color	#00ff00			#FFFFFF
+client.urgent 			  $urgent-bg-color	 	$urgent-bg-color    $text-color 			#00ff00			#FFFFFF
+client.placeholder        #FF0000 				#0C0C0C 		    #FFFFFF 				#FF0000			#FFFFFF
+#------------------------------------------------------------------------------------------------------------------------
+client.background       #ffffff
+
+#------------------------------------------------------------------------------------------------------------------------
+# want to alter the client.unfocused background and childboarder slightly
+
+
+
+
+
 
 # hide_edge_borders both
 
