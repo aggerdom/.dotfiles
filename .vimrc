@@ -36,6 +36,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 
 let $BASH_ENV = "~/.bash_aliases"
 
+
 " ============================= TODOS
 " [ ] copy and paste support
 " [ ] 
